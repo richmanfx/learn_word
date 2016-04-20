@@ -10,13 +10,13 @@ __________
 Требования
 ----------
  
- - В системе должен быть установлен **_Python 3_**
+ - В системе должен быть установлен **Python 3**
  - Консоль должна поддерживать цвет 
 
 Requirements
 ------------
  
- - In the system must be installed **_Python 3_**
+ - In the system must be installed **Python 3**
  - The console must support color
 
 __________
@@ -24,20 +24,20 @@ __________
 Как запускать
 -------------
  
- - ~$./**learn_woed.py** - будет использоваться словарь из файла по умолчанию **_dictionary.txt_**
- - ~$./**learn_woed.py my_cool_dict.txt** - будет использоваться словарь из файла **_my_cool_dict.txt_**
+ - ~$./**learn_woed.py** - будет использоваться словарь из файла по умолчанию **dictionary.txt**
+ - ~$./**learn_woed.py my_cool_dict.txt** - будет использоваться словарь из файла **my_cool_dict.txt**
 
 
 How to start
 ------------
- - ~$./**learn_woed.py** - to use the dictionary from the default file **_dictionary.txt_**
- - ~$./**learn_woed.py my_cool_dict.txt** - will use the dictionary from a file **_my_cool_dict.txt_**
+ - ~$./**learn_woed.py** - to use the dictionary from the default file **dictionary.txt**
+ - ~$./**learn_woed.py my_cool_dict.txt** - will use the dictionary from a file **my_cool_dict.txt**
  
 __________
 
 Формат файла словаря / The format of the dictionary file
 --------------------------------------------------------
-foreign word = the first value of the translation, the second value, ...
+*foreign word = the first value of the translation, the second value, ...*
 
 **Например / For example:**
 ::
