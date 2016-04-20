@@ -1,0 +1,217 @@
+I              	я			
+you, thou      	ты			
+he             	он			
+we             	мы			
+you            	вы			
+they           	они			
+this           	этот, эта, это		
+that           	тот, та, то		
+here           	здесь, тут		
+there          	там			
+who            	кто			
+what           	что			
+where          	где			
+when           	когда			
+how            	как			
+not            	не			
+all            	всё			
+many           	много			
+some           	несколько		
+few            	немного, мало		
+other          	другой, иной		
+one            	один			
+two            	два			
+three          	три			
+four           	четыре			
+five           	пять			
+big            	большой, великий	
+long           	длинный, долгий		
+wide           	широкий			
+thick          	толстый			
+heavy          	тяжёлый			
+small          	маленький		
+little         	маленький		
+short          	короткий		
+narrow         	узкий			
+thin           	тонкий			
+woman          	женщина			
+man		мужчина
+male      	мужчина			
+human bein	человек
+child         	ребёнок			
+wife           	жена			
+wife           	супруга			
+husband        	муж			
+husband        	супруг			
+mother         	мать			
+father         	отец			
+animal         	зверь			
+animal         	животное		
+fish           	рыба			
+bird           	птица			
+dog            	собака			
+louse          	вошь			
+snake          	змея			
+worm           	червь			
+tree           	дерево			
+forest         	лес			
+stick          	палка			
+fruit          	плод			
+fruit          	фрукт			
+seed           	семя			
+seed           	семена			
+leaf           	лист			
+root           	корень			
+bark           	кора			
+flower         	цветок			
+grass          	трава			
+rope           	верёвка			
+rope           	шнур			
+skin           	кожа			
+skin           	шкура			
+meat           	мясо			
+blood          	кровь			
+bone           	кость			
+fat            	жир, сало		
+egg            	яйцо			
+horn           	рог			
+tail           	хвост			
+feather        	перо			
+hair           	волосы			
+head           	голова			
+ear            	ухо			
+eye            	глаз			
+nose           	нос			
+mouth          	рот			
+tooth          	зуб			
+tongue         	язык			
+fingernail     	ноготь			
+foot           	стопа			
+leg            	нога			
+knee           	колено			
+hand           	рука, ладонь		
+wing           	крыло			
+belly          	живот			
+guts           	внутренности, кишки	
+neck           	шея			
+back           	спина			
+breast         	грудь			
+heart          	сердце			
+liver          	печень			
+drink          	пить			
+eat            	есть, кушать		
+bite           	грызть, кусать		
+suck           	сосать			
+spit           	плевать			
+vomit          	рвать, блевать		
+blow           	дуть			
+breathe        	дышать			
+laugh          	смеяться		
+see            	видеть			
+hear           	слышать			
+know           	знать			
+think          	думать			
+smell          	нюхать, чуять		
+fear           	бояться			
+sleep          	спать			
+live           	жить			
+die            	умирать			
+kill           	убивать			
+fight          	бороться		
+hunt           	ловить, охотиться	
+hit            	ударить			
+cut            	резать, рубить		
+split          	разделить		
+stab           	кольнуть, колоть	
+scratch        	царапать		
+dig            	копать, рыть		
+swim           	плавать			
+fly            	летать			
+walk           	ходить, идти		
+come           	приходить, прийти	
+lie            	лежать			
+sit            	сидеть			
+stand          	стоять			
+turn           	обращать		
+fall           	падать			
+give           	давать			
+hold           	держать			
+squeeze        	сжимать			
+rub            	тереть			
+wash           	мыть, умывать		
+wipe           	вытирать		
+pull           	тянуть			
+push           	толкать, пихать		
+throw          	бросать, кидать		
+tie            	вязать, связывать	
+sew            	шить			
+count          	считать			
+say            	говорить, сказать	
+sing           	петь			
+play           	играть			
+float          	плыть			
+flow           	течь			
+freeze         	замёрзнуть		
+swell          	пухнуть			
+sun            	солнце			
+moon           	луна, месяц		
+star           	звезда			
+water          	вода			
+rain           	дождь			
+river          	река			
+lake           	озеро			
+sea            	море			
+salt           	соль			
+stone          	камень			
+sand           	песок			
+dust           	пыль			
+earth          	земля			
+cloud          	туча, облако		
+fog            	туман			
+sky            	небо			
+wind           	ветер			
+snow           	снег			
+ice            	лёд			
+smoke          	дым			
+fire           	огонь			
+ashes          	зола, пепел		
+burn           	жечь, гореть		
+road           	дорога, путь		
+mountain       	гора			
+red            	красный			
+green          	зелёный			
+yellow         	жёлтый			
+white          	белый			
+black          	чёрный			
+night          	ночь			
+day            	день			
+year           	год			
+warm           	тёплый			
+cold           	холодный		
+full           	полный			
+new            	новый			
+old            	старый			
+good           	хороший, добрый		
+bad            	злой, плохой		
+rotten         	гнилой			
+dirty          	грязный			
+straight       	прямой			
+round          	круглый			
+sharp          	острый			
+dull           	тупой			
+smooth         	гладкий, ровный		
+wet            	мокрый			
+dry            	сухой			
+right          	правильный		
+correct        	правильный		
+near           	близкий			
+far            	далёкий, дальний	
+right          	правый			
+left           	левый			
+at             	при, у, возле		
+in             	в			
+with           	с, со			
+and            	и			
+if             	если			
+because        	потому_что		
+name           	имя			

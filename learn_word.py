@@ -8,17 +8,15 @@ import argparse
 __author__ = 'Aleksandr Jashhuk, Zoer, R5AM'
 
 
-def create_parser():
+def create_parser(default_dictionary):
     parser = argparse.ArgumentParser()
-    parser.add_argument('name', nargs='?', default='dictionary.txt')  # словарь по умолчанию
+    parser.add_argument('name', nargs='?', default=default_dictionary)
     return parser
 
 
 def enter_rus_word():
     entered_word = input('Input translate word: ' + '\x1b[01;32m')
     print('\x1b[0m')
-    # if entered_word == '':
-    #     entered_word = 'ничего_не_введено'
     return entered_word
 
 
@@ -28,25 +26,28 @@ def main():
     clear_сonsole()
 
     # Обработать параметр командной строки - имя файла-словаря
-    my_parser = create_parser()    # Экземпляр парсера
+    default_dictionary = 'dictionary.txt'               # файл-словарь по умолчанию
+    my_parser = create_parser(default_dictionary)       # Экземпляр парсера
     namespace = my_parser.parse_args(sys.argv[1:])
-    # print(namespace)
-    dict_file_name = namespace.name     # имя файла-словаря
+    dict_file_name = namespace.name                     # имя файла-словаря
 
     # Открыть файл, считать его и закрыть
     file_wrapper = open(dict_file_name, encoding='UTF-8')
-    lines = file_wrapper.readlines()
+    lines = file_wrapper.readlines()                    # список строк файла
     file_wrapper.close()
 
-    # Получить словарь из файла
+    # Получить слова из файла и поместить в словарь Питоновский
     dict_eng_rus = get_dict_eng_rus(lines)
-    # print(dict_eng_rus)
-
+    # Список иностранных слов из ключей словаря
+    my_keys = list(dict_eng_rus.keys())
     # Получить случайное английское слово
-    random_word = get_random_word(lines)
+    random_word = get_random_line(my_keys)
     print('English word: ' + random_word)
 
-    # Ввод перевода (русского слова
+    # Получить перевод из словаря по ключу
+    translated_words = dict_eng_rus[random_word]
+
+    # Ввод перевода (русского слова)
     entered_word = enter_rus_word()
 
     # Выход из программы
@@ -55,9 +56,6 @@ def main():
         clear_сonsole()
         print('Bye-bye!')
         sys.exit()
-
-    # Получить перевод из файла
-    translated_words = get_translated_words(random_word, dict_eng_rus)
 
     # Проверить правильность перевода
     conclusion = correctness_translate(entered_word, translated_words)
@@ -102,18 +100,12 @@ def correctness_translate(entered_word, translated_words):
     bold_blue_color = '\x1b[01;34m'
     bold_test_color = '\x1b[01;32m'
 
-    result = ''
-
-    for word in translated_words:
-        if entered_word.lower() != word.lower():
-            result = bold_red_color + 'Ошибка!' + default_attributes + ' => '
-            for string in translated_words:
-                result += bold_blue_color + string
-                result += '  '
-        else:
-            result = bold_test_color + 'Верно.' + default_attributes
-            break
-        result += default_attributes
+    if entered_word.lower() not in translated_words.lower() or entered_word == '':
+        result = bold_red_color + 'Ошибка!' + default_attributes + ' => '
+        result += bold_blue_color + translated_words
+    else:
+        result = bold_test_color + 'Верно.' + default_attributes
+    result += default_attributes
 
     if result.find('Верно.') is not -1:
         my_counter.gud_count_increment()
@@ -133,38 +125,16 @@ def clear_сonsole():
 def get_dict_eng_rus(lines):
     dictionary_eng_rus = {}
     for one_line in lines:
-
-        # Удалить запятую
-        rus_words = []
-        for word in one_line.split()[1:]:
-            word = word.replace(',', '')
-            # print(word)
-            rus_words.append(word)
-
-        # Сформировать словарь
-        dictionary_eng_rus.update({one_line.split()[0]: rus_words})
-
+        foreign_word = one_line.split('=')[0].strip()
+        rus_words = one_line.split('=')[1].strip()
+        dictionary_eng_rus.update({foreign_word: rus_words})
     return dictionary_eng_rus
 
 
-def get_translated_words(random_word, dict_eng_rus):
-    # print(dict_eng_rus)
-    # print('Рандом ворд: ' + random_word)
-    transl_words = dict_eng_rus[random_word]
-    # print(transl_words)
-    return transl_words
-
-
-def get_random_word(lines):
-    # Выбрать первый столбец - английские слова
-    english_word = []
-    for one_line in lines:
-        english_word.append(one_line.split()[0])
-    # print(english_word)
-
-    # Венуть случайное слово
-    random.seed(version=2)          # Инициализация временем
-    return random.choice(english_word)
+def get_random_line(word):
+    # Вернуть случайное слово
+    random.seed(version=2)                  # Инициализация временем
+    return random.choice(word)
 
 
 if __name__ == "__main__":

@@ -1,6 +1,6 @@
 # learn_word
 
-Программа для заучивания иностранных слов любого языка.
+Консольная программа для заучивания иностранных слов любого языка.
 
-Program for learning foreign words of any language.
+Console program for learning foreign words of any language.
 
