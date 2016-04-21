@@ -1,7 +1,10 @@
 learn-word
 ==========
 
-Russian_ / English_
+Russian_ |rus-flag| / English_ |eng-flag|
+
+.. |rus-flag| image:: rus-flag.png
+.. |eng-flag| image:: eng-flag.png
 
 __________
 
@@ -30,10 +33,10 @@ The format of the dictionary file
 ::
 
     advanced = erweiterte, modernsten, fortschrittlich
-    advertisement = Werbung *f*, Anzeige *f*
+    advertisement = Werbung **f**, Anzeige **f**
     all = aller, alles, ganz
     and = und
-    animal = Tier *n*, tierish
+    animal = Tier **n**, tierish
     
 __________
 
